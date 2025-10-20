@@ -7,6 +7,13 @@
 */
 
 
+
+/*under 768 px phone*/
+
+*{
+    font-family: sans-serif;
+}
+
 header, aside, footer{
     flex-basis: 100%;
 }
@@ -17,7 +24,6 @@ header{
     align-items: center;
     background-color: #120323;
     color: #97bf04;
-    
 }
 
 main{
@@ -50,6 +56,59 @@ footer{
     text-align: center;
 }
 
+
+/*769px to 999px small screen/tablet */
+@media screen and (min-width:769px){
+    body{
+        background-color: palevioletred; /*remove later*/
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main img{
+
+    }
+
+    main figcaption{
+        border: 3px solid fuchsia;
+    }
+    
+    aside{
+        padding: 1rem;
+    }
+
+    aside h3{
+       /* border: 3px solid darkblue;remove later*/
+        margin: 0;
+    }
+
+    aside p{
+       /* border: 3px solid ghostwhite;remove later*/
+    }
+
+    footer{
+        padding: 2rem;
+        justify-content: space-between;
+    }
+}
+
+
+/*over 1000px desktop*/
+@media screen and (min-width:1000px){
+    body{
+        background-color: teal; /*remove later*/
+    }
+}
 
     
 /*
