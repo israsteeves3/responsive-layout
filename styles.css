@@ -1,6 +1,10 @@
-/*
+
+
 header{
     border: 5px solid rgb(157, 86, 228);
+    background-color: #120323;
+    color: #97bf04;
+    
 }
 
 main{
@@ -14,9 +18,10 @@ aside{
 footer{
     border: 5px solid rgb(213, 35, 35);
 }
-    
-*/
 
+
+    
+/*
 @media screen and (min-width:1000px){
     body{
     background-color: rgb(105, 107, 253);
@@ -96,5 +101,5 @@ footer{
         color: white;
     }
 }
-
+*/
 
