@@ -1,0 +1,33 @@
+header{
+    border: 5px solid rgb(157, 86, 228);
+}
+
+main{
+    border: 5px solid rgb(0, 0, 182);
+}
+
+aside{
+    border: 5px solid rgb(34, 164, 199);
+}
+
+footer{
+    border: 5px solid rgb(213, 35, 35);
+}
+
+@media screen and (max-width:999px){
+   body{
+    background-color: rgb(250, 253, 105);
+} 
+}
+
+@media screen and (min-width:1000px){
+    body{
+    background-color: rgb(105, 107, 253);
+}
+}
+
+@media screen and (max-width:768px){
+body{
+    background-color: greenyellow;
+}
+}
