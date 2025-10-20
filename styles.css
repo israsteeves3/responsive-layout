@@ -147,15 +147,51 @@ footer{
     body{
         background-color: teal; /*remove later*/
     }
-}
 
-#container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 1rem;
-}
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
 
+    main{
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    aside{
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    main figure{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    main figure img{
+        width: 300px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    main figure figcaption{
+        flex: 1;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+}
     
 /*
 @media screen and (min-width:1000px){
