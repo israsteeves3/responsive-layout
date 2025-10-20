@@ -25,7 +25,7 @@ header, main, aside, footer{
 }
 
 header{
-    border: 5px solid rgb(157, 86, 228); /*remove later*/
+    /*border: 5px solid rgb(157, 86, 228); remove later*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@ header{
 
 
 main{
-    border: 5px solid rgb(0, 0, 182); /*remove later*/
+    /*border: 5px solid rgb(0, 0, 182); remove later*/
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -54,7 +54,7 @@ main img{
 }
 
 aside{
-    border: 5px solid rgb(34, 164, 199); /*remove later*/
+    /*border: 5px solid rgb(34, 164, 199); remove later*/
     display: flex;
     flex-direction: column;
     max-width: fit-content;
@@ -65,7 +65,7 @@ aside{
 }
 
 footer{
-    border: 5px solid rgb(213, 35, 35); /*remove later*/
+    /*border: 5px solid rgb(213, 35, 35); remove later*/
     display: flex;
     justify-content: space-between;
     background-color: #9d043d;
@@ -107,7 +107,7 @@ footer{
     }
 
     main figcaption{
-        border: 3px solid fuchsia;
+       /* border: 3px solid fuchsia; */
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -145,14 +145,15 @@ footer{
 /*over 1000px desktop*/
 @media screen and (min-width:1000px){
     body{
-        background-color: teal; /*remove later*/
+        background-color: white
     }
 
     #container{
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
         gap: 1rem;
+        min-height: 80vh;
+        height: auto;
     }
 
     main{
@@ -167,6 +168,7 @@ footer{
         grid-column: 2;
         grid-row: 1;
         width: 100%;
+
     }
 
     main figure{
@@ -181,97 +183,21 @@ footer{
         width: 300px;
         height: auto;
         flex-shrink: 0;
+        align-self: flex-start;
     }
 
     main figure figcaption{
         flex: 1;
-        max-width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 0.5rem;
-    }
-}
-    
-/*
-@media screen and (min-width:1000px){
-    body{
-    background-color: rgb(105, 107, 253);
-}
-}
-
-
-@media screen and (max-width:999px){
-
-    header{
-        color: #97bf04;
-        background-color: #120323;
-    }
-
-    body{
-        background-color: white;
-        text-align: center;
-    }
-
-    figure{
-        text-align: left;
-    }
-
-    main img{
-        border: 4px solid #d9043d;
-    }
-
-    aside{
-        background-color: #97bf04;
-        text-align: left;
-        padding: 1rem;
-    }
-    
-    div{
-        margin: 1rem;
+        word-wrap: break-word;
+        
     }
 
     footer{
-        background-color: #d9043d;
-        color: white;
-        padding: 2rem;
+        margin-top: 2rem;
     }
 }
-
-
-@media screen and (max-width:768px){
-
-    header{
-        color: #97bf04;
-        background-color: #120323;
-    }
-
-    body{
-        background-color: white;
-        text-align: center;
-    }
-
-    figure{
-        text-align: left;
-    }
-
-    main img{
-        border: 4px solid red;
-    }
-
-    aside{
-        background-color: #97bf04;
-        text-align: left;
-    }
     
-    div{
-        margin: 1rem;
-    }
-
-    footer{
-        background-color: #d9043d;
-        color: white;
-    }
-}
-*/
-
