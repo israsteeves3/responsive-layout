@@ -72,15 +72,25 @@ footer{
 
     main{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        
+     
     }
 
-    main img{
-
+    main figure img{
+        border: 5px solid greenyellow;
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+     
     }
 
     main figcaption{
         border: 3px solid fuchsia;
+        flex-direction: column;
     }
     
     aside{
