@@ -36,6 +36,10 @@ header{
     color: #97bf04;
 }
 
+header img{
+    margin-top: 1rem;
+}
+
 
 main{
    /* border: 5px solid rgb(0, 0, 182); remove later*/
@@ -57,11 +61,11 @@ aside{
     /*border: 5px solid rgb(34, 164, 199); remove later*/
     display: flex;
     flex-direction: column;
-    max-width: fit-content;
+    padding: 0 1rem;
     align-items: flex-start;
-   
     width: 100%;
     background-color: #97bf04;
+
 }
 
 footer{
@@ -79,7 +83,7 @@ footer{
 /*769px to 999px small screen/tablet */
 @media screen and (min-width:769px){
     body{
-        background-color: white; /*remove later*/
+        background-color: white; 
     }
     
     header{
@@ -89,6 +93,11 @@ footer{
         align-items: center;
         gap: 1rem;
         text-align: right;
+        margin-bottom: 1rem;
+    }
+
+    header img{
+        margin-bottom: 1rem;
     }
 
     main figure{
@@ -124,6 +133,7 @@ footer{
     
     aside{
         padding: 1rem;
+        margin-top: 2rem;
         align-content: end;
     }
 
@@ -144,6 +154,10 @@ footer{
 
 
    @media screen and (min-width:1000px){
+        header{
+            margin-bottom: 1rem;
+        }
+
         #container{
             display: grid;
             grid-template-columns: 3fr 1fr;
