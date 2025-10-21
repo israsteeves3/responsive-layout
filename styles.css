@@ -25,7 +25,7 @@ header, main, aside, footer{
 }
 
 header{
-    border: 5px solid rgb(157, 86, 228); /*remove later*/
+   /* border: 5px solid rgb(157, 86, 228); remove later*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@ header{
 
 
 main{
-    border: 5px solid rgb(0, 0, 182); /*remove later*/
+   /* border: 5px solid rgb(0, 0, 182); remove later*/
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -52,16 +52,9 @@ main img{
     max-width: 100%;
 }
 
-figcaption h2{
-    border: 2px solid peachpuff;
-}
-
-figcaption p{
-    border: 2px solid hotpink;
-}
 
 aside{
-    border: 5px solid rgb(34, 164, 199); /*remove later*/
+    /*border: 5px solid rgb(34, 164, 199); remove later*/
     display: flex;
     flex-direction: column;
     max-width: fit-content;
@@ -72,7 +65,7 @@ aside{
 }
 
 footer{
-    border: 5px solid rgb(213, 35, 35); /*remove later*/
+    /* border: 5px solid rgb(213, 35, 35); remove later*/
     display: flex;
     justify-content: space-between;
     background-color: #9d043d;
@@ -149,15 +142,22 @@ footer{
     }
 }
 
-@media screen and (min-width:1000px){
-    #container{
-        display: grid;
-        grid-template-areas: "figure" "figcaption" "aside";
-        grid-template-columns: 1fr 2fr 1fr;
-        gap: 2px;
-    }
-}
-    
+
+   @media screen and (min-width:1000px){
+        #container{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 1rem;
+        }
+
+        figure{
+            grid-column: 1;
+        }
+
+        aside{
+            grid-column: 2;
+        }
+   } 
 
 
 /* trying something else
